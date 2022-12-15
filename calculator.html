@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+   	 <!-- Latest compiled JavaScript -->
+    	<script src="calculator.js"></script>
+	<link rel="stylesheet" href="myStyle.css">
+
+	</head>
+<body>
+
+<div class="calculator card">
+
+  <input type="text" class="calculator-screen z-depth-1" id="resultBox" value=""  disabled />
+
+  <div class="calculator-keys">
+
+    <button type="button" id="plus" class="operator btn btn-info" onclick="operationButton(1)" value="+">+</button>
+    <button type="button" id="minus" class="operator btn btn-info" onclick="operationButton(2)"  value="-">-</button>
+    <button type="button" id="multiply" class="operator btn btn-info" onclick="operationButton(3)" value="*">&times;</button>
+    <button type="button" id="divide" class="operator btn btn-info" onclick="operationButton(4)" value="/">&divide;</button>
+
+    <button type="button" value="7" class="btn btn-light waves-effect" onclick="displayValue(7)">7</button>
+    <button type="button" value="8" class="btn btn-light waves-effect" onclick="displayValue(8)">8</button>
+    <button type="button" value="9" class="btn btn-light waves-effect" onclick="displayValue(9)">9</button>
+
+
+    <button type="button" value="4" class="btn btn-light waves-effect" onclick="displayValue(4)">4</button>
+    <button type="button" value="5" class="btn btn-light waves-effect" onclick="displayValue(5)">5</button>
+    <button type="button" value="6" class="btn btn-light waves-effect" onclick="displayValue(6)">6</button>
+
+
+    <button type="button" value="1" class="btn btn-light waves-effect" onclick="displayValue(1)">1</button>
+    <button type="button" value="2" class="btn btn-light waves-effect" onclick="displayValue(2)">2</button>
+    <button type="button" value="3" class="btn btn-light waves-effect" onclick="displayValue(3)">3</button>
+
+
+    <button type="button" value="0" class="btn btn-light waves-effect "onclick="displayValue(0)">0</button>
+    <button type="button" class="decimal function btn btn-secondary" value="." onclick="displayValue('.')">.</button>
+    <button type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear" onclick="allclear()">AC</button>
+
+    <button type="button" id="equal" class="equal-sign operator btn btn-default" value="=" onclick="equals()">=</button>
+
+  </div>
+</div>
+
+</body>
+</html>
